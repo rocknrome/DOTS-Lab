@@ -23,5 +23,5 @@ ball.addEventListener('click', () => {
     if (score === 100) {
         levelWinner.style.opacity = '1';
     }
-    console.log('Ball clicked');
+    //console.log('Ball clicked'); //checkpoint
   });
