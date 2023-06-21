@@ -13,7 +13,7 @@ function handleBallClick(increment) {
   score += increment;
   scoreDisplay.innerText = `${score}`;
 
-  if (score === 100) {
+  if (score >= 100) {
     levelWinner.style.opacity = '1';
   } else {
     levelWinner.style.opacity = '0'; // Ensure opacity is set to 0 when the condition is not met
