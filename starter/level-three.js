@@ -8,6 +8,7 @@ const balls = document.querySelectorAll('.js-ball');
 const scoreDisplay = document.querySelector('.js-score');
 const levelWinner = document.querySelector('.level-winner');
 
+//functionality
 function handleBallClick(increment) {
   score += increment;
   scoreDisplay.innerText = `${score}`;
@@ -19,6 +20,7 @@ function handleBallClick(increment) {
   }
 }
 
+//event listener, parsing to number from string
 balls.forEach((ball) => {
   const increment = parseInt(ball.dataset.increment);
 
